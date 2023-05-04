@@ -8,7 +8,7 @@
     --index: calc(1vw + 1vh);
     --color-header: #f4efec;
     --color-text: #cdc6c3;
-    --gallery-gap: calc(var(--index) * 10);
+    --gallery-gap: calc(var(--index) * 7.5);
 }   
 
 @font-face {
@@ -71,5 +71,32 @@ body {
 
 .gallery__item {
     max-width: calc(var(--index) * 21);
-    margin-bottom: ;
+    margin-bottom: var(--gallery-gap);
+    max-height: 180vh;
+    border-radius: 8px;
+}
+
+.gallery__left {
+    margin-top: calc(var(--gallery-gap) * 1.75);
+}
+
+.gallery__right {
+    margin: 0;
+    margin-bottom: var(--gallery-gap);
+}
+
+.text-block {
+    color: var(--color-text);
+    position: relative;
+}
+
+.text-block__h {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--color-header);
+    margin-bottom: 1.5rem;
+}
+
+.text-block__p {
+    line-height: 1.75;
 }
